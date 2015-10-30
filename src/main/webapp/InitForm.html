@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>VZ order</title>
+<script src="Handle.js"></script>
+</head>
+<body  background="back.jpg">
+
+
+<center><font face="arial" color="blue" size="6" ><i>Welcome to VZ ordering </i></font></center>
+<p >This is a sample paragraph text to test sensitivity. On selecting the <span class="fixed" id="para" onclick="onFoucsTextField(this.id)">"product"</span>
+ text you will get additional information pop up for the same.</p>
+<Form action="Success.html">
+<table><tr>
+<td>Enter your VZID:</td>
+
+  <td><input type="text" name="vzid" placeholder="Enter your Vz Id" onfocus="onFoucsTextField(this.name)"></td>
+  </tr>
+
+  <tr>
+   <td>Enter your EID:</td>  <td><input type="text" name="eid" placeholder="Enter your Enterprise Id" onfocus="onFoucsTextField(this.name)">
+</td></tr>
+
+<tr>
+
+<td>Enter the Product ID:</td>
+  <td><select onclick="onFoucsTextField(this.value)">
+  <option value="p001">p001</option>
+   <option value="p002">p002</option>
+   <option value="p003">p003</option>
+   <option value="p004">p004</option>
+   <option value="p005">p005</option>
+   <option value="p006">p006</option>
+   <option value="p007">p007</option>
+   <option value="p008">p008</option>
+   <option value="p009">p009</option>
+   <option value="p0010">p0010</option>
+</select> </td>
+  </tr>
+   <tr><td>Enter the Desired due date:</td>  <td><input type="date" name="ddate"></td>
+ </tr><tr>
+<td>Enter the Location Address:</td></tr>
+  <tr><td>street:</td><td><input type="text" name="street"></td>
+  </tr><tr>
+<td>  city:</td> <td> <input type="text" name="city"></td>
+ </tr><tr>
+<td>State:</td>
+ <td> <input type="text" name="state"></td>
+  </tr><tr>
+ <td> Country:</td>  <td><input type="text" name="country"></td>
+ </tr>
+</table>
+<div id="product_suggest">
+
+</div>
+<input type="submit" value="submit">
+</Form>
+
+
+</body>
+</html>
