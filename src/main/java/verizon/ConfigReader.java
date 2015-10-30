@@ -12,16 +12,16 @@ public class ConfigReader {
 	    InputStream is = null;
 	 
 	    // First try loading from the current directory
-	    //try {
-	    //    File f = new File("videoResources.properties");
-	    //    is = new FileInputStream( f );
-	    //}
-	    //catch ( Exception e ) { is = null; }
+	    try {
+	        File f = new File("videoResources.properties");
+	       is = new FileInputStream( f );
+	    }
+	    catch ( Exception e ) { is = null; }
 	 
 	    try {
 	        if ( is == null ) {
 	            // Try loading from classpath
-	            is = getClass().getClassLoader().getResourceAsStream("videoResources.properties");
+	            is = getClass().getResourceAsStream("videoResources.properties");
 	        }
 	 
 	        // Try loading properties from the file (if found)
