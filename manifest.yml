@@ -1,6 +1,6 @@
 ---
 applications:
-- name: AvensisHackathon
+- name: ChatAuth
   memory: 512M 
-  host: AvensisHackathonHost 
-  path: target/AvensisHackathon.war
+  host: ChatAuthHost 
+  path: target/ChatAuth.war
