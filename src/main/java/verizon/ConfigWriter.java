@@ -1,13 +1,15 @@
-package verizon;
+
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
+import java.util.*;
+import java.io.*;
 
 public class ConfigWriter {
 	
-	public  void returnVideoURL(String elementID, String resourceVal){
+	public  void changeVideoURL(String elementID, String resourceVal){
 		Properties props = new Properties();
 	    InputStream is = null;
 	 
