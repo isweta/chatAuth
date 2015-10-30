@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.vz</groupId>
-  <artifactId>Avensis-Hackathon</artifactId>
+  <artifactId>Chat-Auth</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>AvensisHackathon</name>
+  <name>ChatAuth</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -30,7 +30,7 @@
 
   </dependencies>
   <build>
-		<finalName>AvensisHackathon</finalName>
+		<finalName>ChatAuth</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
