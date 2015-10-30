@@ -17,7 +17,7 @@ public class ConfigureServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ConfigChangerServlet() {
+    public ConfigureServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
