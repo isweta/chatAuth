@@ -1,162 +1,79 @@
-<!DOCTYPE html> 
- <html> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ABC Website</title>
 
-
-<head> 
- <meta charset="ISO-8859-1"> 
- <title> 
- Insert title here</title> 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> 
- <script  src="resource.js"> 
- </script> 
- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"> 
- </script> 
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> 
- </script> 
- <script src="//code.jquery.com/jquery-1.10.2.js"> 
- </script> 
- <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"> 
- </script> 
- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"> 
- </script> 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> 
- </script> 
- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" media="screen" /> 
- <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"> 
- </script> 
- 	    <link type="text/css" href="jquery-ui-chatbox.css" rel="stylesheet" /> 
- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"> 
- </script> 
- <script  src="Handle.js"> 
- </script> 
+</head>
+<body bgcolor="cyan">
+<div id="dialog-confirm" title="Do you need help?">
+</div>
+<center>Welcome to VZ ordering </center>
+<Form>
+<table align="center"><tr>
+<td>Enter your VZID:</td>
+  <td><input id="vzid" type="text" name="vzid" placeholder="Enter your Vz Id" ></td>
+ </tr>
+  <tr>
+   <td>Enter your EID:</td>  <td><input  type="text" name="eid" placeholder="Enter your Enterprise Id" >
+</td></tr>
  
- </head> 
- <body> 
- <div id="dialog-confirm" title="Do you need help?"> 
- </div> 
- <center> 
- Welcome to VZ ordering </center> 
- <Form> 
- <table> 
- <tr> 
- <td> 
- Enter your VZID:</td> 
-   <td> 
- <input id="vzid" type="text" name="vzid" placeholder="Enter your Vz Id" > 
- </td> 
-  </tr> 
-   <tr> 
-    <td> 
- Enter your EID:</td> 
-   <td> 
- <input  type="text" name="eid" placeholder="Enter your Enterprise Id"  id="id_eid" > 
- </td> 
- </tr> 
-  <tr> 
- <td> 
- Enter the Product ID:</td> 
-   <td> 
- <select> 
-   <option value="p001"> 
- p001</option> 
-    <option value="p002"> 
- p002</option> 
-    <option value="p003"> 
- p003</option> 
-    <option value="p004"> 
- p004</option> 
-    <option value="p005"> 
- p005</option> 
-    <option value="p006"> 
- p006</option> 
-    <option value="p007"> 
- p007</option> 
-    <option value="p008"> 
- p008</option> 
-    <option value="p009"> 
- p009</option> 
-    <option value="p0010"> 
- p0010</option> 
- </select> 
-  </td> 
-   </tr> 
-    <tr> 
- <td> 
- Enter the Desired due date:</td> 
-   <td> 
- <input type="text" name="dddate" id="id_dddate" > 
- </td> 
-  </tr> 
- <tr> 
- <td> 
- Enter the Location Address:</td> 
- </tr> 
-   <tr> 
- <td> 
- street:</td> 
- <td> 
- <input type="text" name="street" id="id_street" > 
- </td> 
-   </tr> 
- <tr> 
- <td> 
-   city:</td> 
-  <td> 
-  <input type="text" name="city" id="id_city" > 
- </td> 
-  </tr> 
- <tr> 
- <td> 
- State:</td> 
-  <td> 
-  <input type="text" name="state" id="id_state" > 
- </td> 
-   </tr> 
- <tr> 
-  <td> 
-  Country:</td> 
-   <td> 
- <input type="text" name="country" id="id_country" > 
- </td> 
-  </tr> 
- </table> 
- <div id="product_suggest"> 
- </div> 
- <input  type="submit" value="submit"> 
- </Form> 
- <!-- <div class="overlaybg"> 
-  </div> 
- <div class="wrapper"> 
-    Section Start  <div class="youtubeV"> 
-     <div class="guideBox"> 
-       <div class="videoThum"> 
-  <a href="javascript:;"  rel="http://www.youtube.com/embed/GNb8T5NBdQg?list=PL6B08BAA57B5C7810" class="youTubeVideo" > 
- </a> 
- </div> 
-       <div class="videoInfo"> 
-         <h2> 
- Youtube Video 1 </h2> 
-         <p> 
- Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Uuismod fgrtyert osw laoreet yuore kiolp aliquam erat volutpat.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Uuismod fgrtyert osw laoreet yuore kiolp aliquam erat volutpat. </p> 
-       </div> 
-     </div> 
-     </div> 
-     </div> 
-     <div class="popup youtube"> 
-  <a class="close" href="javascript:;" > 
- X</a> 
-   <div class="video-container"> 
-     <div class="iframe"> 
-       <h2> 
- </h2> 
-       <iframe width="560" height="315" src="" frameborder="0" allowfullscreen> 
- </iframe> 
-     </div> 
-   </div> 
- </div> 
-  <div id="dialog-confirm" title="Do you need help?"> 
- </div> 
- --> 
- </body> 
- </html>
+<tr>
+
+<td>Enter the Product ID:</td>
+  <td><select>
+  <option value="p001">p001</option>
+   <option value="p002">p002</option>
+   <option value="p003">p003</option>
+   <option value="p004">p004</option>
+   <option value="p005">p005</option>
+   <option value="p006">p006</option>
+   <option value="p007">p007</option>
+   <option value="p008">p008</option>
+   <option value="p009">p009</option>
+   <option value="p0010">p0010</option>
+</select> </td>
+  </tr>
+   <tr><td>Enter the Desired due date:</td>  <td><input type="text" name="dddate"></td>
+ </tr><tr>
+<td>Enter the Location Address:</td></tr>
+  <tr><td>street:</td><td><input type="text" name="street"></td>
+  </tr><tr>
+<td>  city:</td> <td> <input type="text" name="city"></td>
+ </tr><tr>
+<td>State:</td>
+ <td> <input type="text" name="state"></td>
+  </tr><tr>
+ <td> Country:</td>  <td><input type="text" name="country"></td>
+ </tr>
+ <tr><td></td><td><input id=submit type="submit" value="submit"></td></tr>
+</table>
+<div id="product_suggest">
+
+</div>
+
+</Form>
+<!-- <div class="overlaybg"> </div>
+<div class="wrapper"> 
+  Section Start
+  <div class="youtubeV">
+    <div class="guideBox">
+      <div class="videoThum"> <a href="javascript:;"  rel="http://www.youtube.com/embed/GNb8T5NBdQg?list=PL6B08BAA57B5C7810" class="youTubeVideo" ></a></div>
+      <div class="videoInfo">
+        <h2>Youtube Video 1 </h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Uuismod fgrtyert osw laoreet yuore kiolp aliquam erat volutpat.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Uuismod fgrtyert osw laoreet yuore kiolp aliquam erat volutpat. </p>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="popup youtube"> <a class="close" href="javascript:;" >X</a>
+  <div class="video-container">
+    <div class="iframe">
+      <h2></h2>
+      <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div> 
+<div id="dialog-confirm" title="Do you need help?"></div>-->
+</body>
+</html>

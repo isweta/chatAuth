@@ -1,2 +1,0 @@
-vzid=https=//www.youtube.com/watch?v=oATHW1JTjUk
-eid=https=//www.youtube.com/watch?v=oATHW1JTjUk
