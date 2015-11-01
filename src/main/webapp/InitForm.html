@@ -2,30 +2,26 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>VZ order</title>
-<script src="Handle.js"></script>
+<title>Insert title here</title>
+
 </head>
-<body  background="back.jpg">
-
-
-<center><font face="arial" color="blue" size="6" ><i>Welcome to VZ ordering </i></font></center>
-<p >This is a sample paragraph text to test sensitivity. On selecting the <span class="fixed" id="para" onclick="onFoucsTextField(this.id)">"product"</span>
- text you will get additional information pop up for the same.</p>
-<Form action="Success.html">
+<body>
+<div id="dialog-confirm" title="Do you need help?">
+</div>
+<center>Welcome to VZ ordering </center>
+<Form>
 <table><tr>
 <td>Enter your VZID:</td>
-
-  <td><input type="text" name="vzid" placeholder="Enter your Vz Id" onfocus="onFoucsTextField(this.name)"></td>
-  </tr>
-
+  <td><input id="vzid" type="text" name="vzid" placeholder="Enter your Vz Id" ></td>
+ </tr>
   <tr>
-   <td>Enter your EID:</td>  <td><input type="text" name="eid" placeholder="Enter your Enterprise Id" onfocus="onFoucsTextField(this.name)">
+   <td>Enter your EID:</td>  <td><input  type="text" name="eid" placeholder="Enter your Enterprise Id" onclick="onFoucsTextField(this.name)">
 </td></tr>
-
+ 
 <tr>
 
 <td>Enter the Product ID:</td>
-  <td><select onclick="onFoucsTextField(this.value)">
+  <td><select>
   <option value="p001">p001</option>
    <option value="p002">p002</option>
    <option value="p003">p003</option>
@@ -38,7 +34,7 @@
    <option value="p0010">p0010</option>
 </select> </td>
   </tr>
-   <tr><td>Enter the Desired due date:</td>  <td><input type="date" name="ddate"></td>
+   <tr><td>Enter the Desired due date:</td>  <td><input type="text" name="dddate"></td>
  </tr><tr>
 <td>Enter the Location Address:</td></tr>
   <tr><td>street:</td><td><input type="text" name="street"></td>
@@ -54,11 +50,29 @@
 <div id="product_suggest">
 
 </div>
-<input type="submit" value="submit">
+<input id=submit type="submit" value="submit">
 </Form>
-
-
-
-
+<!-- <div class="overlaybg"> </div>
+<div class="wrapper"> 
+  Section Start
+  <div class="youtubeV">
+    <div class="guideBox">
+      <div class="videoThum"> <a href="javascript:;"  rel="http://www.youtube.com/embed/GNb8T5NBdQg?list=PL6B08BAA57B5C7810" class="youTubeVideo" ></a></div>
+      <div class="videoInfo">
+        <h2>Youtube Video 1 </h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Uuismod fgrtyert osw laoreet yuore kiolp aliquam erat volutpat.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Uuismod fgrtyert osw laoreet yuore kiolp aliquam erat volutpat. </p>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="popup youtube"> <a class="close" href="javascript:;" >X</a>
+  <div class="video-container">
+    <div class="iframe">
+      <h2></h2>
+      <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div> 
+<div id="dialog-confirm" title="Do you need help?"></div>-->
 </body>
 </html>

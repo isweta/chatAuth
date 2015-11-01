@@ -28,8 +28,8 @@ public class ConfigWriter {
 	    	
 	    	System.out.println(e.getMessage());;
 	    	}
-	 
-		FileOutputStream out = new FileOutputStream("/videoResources.properties");
+		File configFile=getClass().getResource("/videoResources.properties");
+		FileOutputStream out = new FileOutputStream(configFile);
 		props.setProperty(elementID, resourceVal);
 		props.store(out, null);
 		out.close();
